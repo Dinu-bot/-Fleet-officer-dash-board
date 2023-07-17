@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> MY RIDE </title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="stylesheet" href="dashboard.css">
+		<link rel="stylesheet" href="vehiclereport.css">
+		
+	</head>
+	
+	<body>
+		
+		
+		<div class="account">
+			<div class="profile-pic">
+			<img src="./assets/fleetOfficer.jpg" alt="Profile Picture">
+			</div>
+			<div class="profile-info">
+				<h3 class="account-name">MARK DAVID</h3>
+
+				<div class="icons">
+
+					<span class="notification-icon">
+							<i class="fas fa-bell"></i>
+					</span>
+
+					<span class="settings-icon">
+							<i class="fas fa-cog"></i>
+					</span>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	<nav class="top-nav">
+		<ul class="nav-links">
+
+				<div class="menu ">
+
+					<li><a href="default.asp">Dashboard</a></li>
+					<li class="services"><a href="news.asp">Reports</a>
+							<ul class="dropdown">
+							<li> <a href="/"> Vehicle Report </a></li> 
+							<li> <a href="/"> Fleet Activity report  </a></li> 
+							 
+							</ul>
+					</li>
+					<li><a href="contact.asp">Fleet</a></li>
+					<li><a href="about.asp">Support</a></li>
+
+
+				</div>
+
+				
+		
+		</ul>
+	</nav>
+
+
+			<fieldset>
+					<legend align = "center"> Enter Details</legend>
+				<form action="submitReport.php" method="post" class="my-form">
+					<!-- INT = (input type) to clearly identify the variables -->
+					<label for = "modelINT"> Vehicle Model :</label>
+					<input type = "text" id = "modelINT" name = "feild1" style="width: 100%;"> 
+					<br>
+
+					<label for = "availINT"> Vehicle Availability : </label>
+					<input type = "text" id = "availINT" name = "feild2" style="width: 100%;">
+					<br>
+
+					<label for = "passengerNoINT"> Passenger Count : </label>
+					<input type = "text" id = "passengerNoINT" name = "feild3" style="width: 100%;">
+					<br>
+
+					<label for = "typeINT"> Vehicle Type : </label>
+					<input type = "text" id = "typeINT" name = "feild4" style="width: 100%;">
+					<br>
+
+					<label for = "fuelTypeINT"> Vehicle Fuel Type :</label>
+					<input type = "text" id = "fuelTypeINT" name = "feild5" style="width: 100%;">
+					<br>
+
+					<label for = "insuranceIDINT"> Vehicle Isuarance ID :</label>
+					<input type = "text" id = "insuranceIDINT" name = "feild6" style="width: 100%;"> 
+					<br>
+
+					<label for = "gearSysINT"> Vehicle Gear System : </label>					
+					<input type = "text" id = "gearSysINT" name = "feild7" style="width: 100%;">
+					<br>
+
+					<label for = "lisencePlateINT"> Vehicle lisence Plate : </label>
+					<input type = "text" id = "lisencePlateINT" name = "feild8" style="width: 100%;">
+					<br>
+
+					<label for = "storageINT"> Vehicle Storage : </label>
+					<input type = "text" id = "storageINT" name = "feild9" style="width: 100%;">
+					<br>
+
+					<label for = "freeMilageINT"> Free Milage :</label>
+					<input type = "text" id = "freeMilageINT" name = "feild10" style="width: 100%;">
+					<br>
+
+					<label for = "costINT"> Cost per Mile :</label>
+					<input type = "text" id = "costINT" name = "feild11" style="width: 100%;">
+					<br>
+
+
+
+					<input type = "submit" value= "submit">
+				</form>
+				
+			</fieldset>	
+	
+	</body>
+</html>	

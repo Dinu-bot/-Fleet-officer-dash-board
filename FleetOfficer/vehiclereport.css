@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}    
+body{
+    font-family: cursive;
+    background-color: #dddbdb;
+}    
+a {
+    text-decoration:none;
+}    
+li{
+    list-style: none;
+}
+
+.space>h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .space{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+  }
+  
+
+  .vehicle-table {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.vehicle-table th,
+.vehicle-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Styles for the buttons */
+.create-report-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.create-report-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.create-report-button:hover {
+    background-color: #45a049;
+}
+
+/* Additional styles for Edit and Delete buttons */
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.delete-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    cursor: pointer;
+    
+}
+
+
+/*update table*/
+
+.update-table {
+    border: 1px solid #ccc;
+    width: 25%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.update-table td {
+    padding: 5px;
+}
+
+.update-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+
+/* create report*/
+.my-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.my-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.my-form input[type="text"] {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.my-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}

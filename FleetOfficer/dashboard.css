@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}    
+body{
+    font-family: cursive;
+}    
+a {
+    text-decoration:none;
+}    
+li{
+    list-style: none;
+}
+
+
+/*profile bar*/
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dddbdb;
+    padding: 10px;
+  }
+  
+  .profile-pic {
+    margin-right: 10px;
+  }
+  
+  .profile-pic img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 100px;
+  }
+  
+  .profile-info {
+    display: flex;
+    
+    align-items: flex-end;
+  }
+  
+  .account-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+.notification-icon,
+.settings-icon {
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+
+/*navigation bar*/
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+    }
+
+.nav-links a {
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+}
+.menu li:hover{
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li {
+    padding: 5px 14px ;
+}
+ .services {
+    position: relative; 
+}
+
+.dropdown {
+    background-color: rgb(0, 187, 187);
+    padding: 1rem 0;
+    position: absolute; 
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li + li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5rem 1em;
+    width: 8rem;
+    text-align: center;
+}
+
+.dropdown li:hover a {
+    background-color: #92c9c9;
+}
+    
+.services:hover .dropdown {
+    display: block;
+} 
+
+/* containers */
+.container-1,
+.container-2{
+  display: flex;
+  height: 540px ;
+  
+  background-color: #daddcf;
+
+}
+
+/* Driver idiling Chart */
+.chart-container-driverIdilingChart {
+    width: 540px;
+    height: 500px;
+    background-color: #e7e7e2;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.chart-container-driverIdilingChart > h2,
+.chart-container-fleetActivity > h2,
+.repaired-vehicle-return-status > h2,
+.chart-container-VehicleAvailabilityChart>h2,
+.chart-container-workloadChart > h2,
+.chart-container-trip-status>h2{
+    text-align: center;
+}
+
+.chart-container-driverIdilingChart > h2,
+.chart-container-VehicleAvailabilityChart>h2{
+    padding-top: 25px;
+}
+
+/* fleetActivity-chart
+Trip Status chart*/
+
+.fleetActivity-chart
+,.trip-status-chart{
+    width: 650px;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: #e7e7e2;
+    
+}
+
+
+
+
+
+
+.chart-container-fleetActivity
+,.chart-container-trip-status {
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 0px;
+    width: 650px;
+    height: 300px;
+   
+
+}
+.legend-container{
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 0px;
+    width: 650px;
+    height: 100px;
+    
+  }
+ 
+  .legend-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 20px;
+
+  }
+  
+  .legend-color {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+  
+  .legend-input {
+    margin-left: 5px;
+    width: 50px;
+  }
+.updateButton{
+    margin-left: 300px;
+    padding-top:5px;
+	  padding-right:10px;
+	  padding-bottom:5px;
+	  padding-left:10px;
+    font-family: cursive;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    
+
+}
+
+
+/*vehicle Repaired return status */
+.repaired-vehicle-return-status{
+  width: 650px;
+  height: 500px;
+  overflow: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  background-color: #e7e7e2;
+}
+.repaired-vehicle-return-status > h2{
+  padding-bottom: 24px;
+}
+.repaired-grid,
+.repaired-input-grid{
+    display :grid;
+    grid-template-columns : 150px 147px 112px;
+    column-gap: 87px;
+    row-gap :14px; 
+    align-items:center;
+    justify-content: center;
+}
+.repaired-input-grid{
+    margin-bottom: 10px;
+    align-items:stretch;
+}
+.name-input ,
+.due-date-input{
+    font-size :  15px;
+    padding :6px;
+    border-radius: 15px;
+
+}
+.add-repaired-button{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+
+}
+
+.delete-repaired-button{
+    background-color: darkred;
+    color :white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-top:10px;
+    padding-bottom: 10px; 
+    border-radius: 15px;
+
+}
+
+.chart-container {
+  width: 100%;
+  height: 400px;
+}
+
+.chart-container-availability {
+  width: 650px;
+  height: 400px;
+  margin: 20px;
+  background-color: #34da13;
+  padding: 20px;
+}
+
+.chart-container-availability h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chart-container-VehicleAvailabilityChart {
+  width: 650px;
+  height: 500px;
+  background-color: #e7e7e2;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+/* work load chart*/
+
+.chart-container-workloadChart {
+  width: 540px;
+  height: 500px;
+  background-color: #e7e7e2;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+
+
